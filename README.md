@@ -13,6 +13,7 @@ An interactive PM thinking trainer for students and aspiring Product Managers �
 - [Why PM Trainer?](#-why-pm-trainer)
 - [PM Frameworks Covered](#pm-frameworks-covered)
 - [Tech Stack](#tech-stack)
+- [Project Layout](#project-layout)
 - [Setup & Installation](#setup--installation)
 - [Author](#author)
 
@@ -20,7 +21,7 @@ An interactive PM thinking trainer for students and aspiring Product Managers �
 
 ## Overview
 
-PM Trainer is a structured, AI-powered learning platform designed to help aspiring Product Managers master core competencies through deliberate daily practice. Each challenge builds frameworks, decision-making skills, and the strategic thinking required to excel in product management interviews and on the job.
+PM Trainer is a structured, AI-powered learning platform designed to help aspiring Product Managers master core competencies through deliberate daily practice. Each challenge builds frameworks, de[...]
 
 **Perfect for:**
 - Job candidates preparing for PM interviews
@@ -102,6 +103,48 @@ PM Trainer is a structured, AI-powered learning platform designed to help aspiri
 | **Frontend** | TypeScript + React | Interactive user interface and challenge workflows |
 | **Styling** | Tailwind CSS | Modern, responsive UI design |
 | **Runtime** | Node.js | Backend execution and API integration |
+
+---
+
+## Project Layout
+
+```
+PM-trainer/
+├── src/                      # Source code directory
+│   ├── components/           # Reusable React components
+│   ├── pages/               # Page components for different routes
+│   ├── utils/               # Utility functions and helpers
+│   ├── hooks/               # Custom React hooks
+│   ├── types/               # TypeScript type definitions
+│   └── App.tsx              # Main application component
+│
+├── public/                   # Static assets
+├── index.html                # HTML entry point
+├── vite.config.ts            # Vite configuration
+├── tsconfig.json             # TypeScript configuration
+├── tailwind.config.js        # Tailwind CSS configuration
+├── package.json              # Project dependencies and scripts
+├── .env.example              # Environment variables template
+├── .gitignore                # Git ignore rules
+└── README.md                 # This file
+```
+
+### Key Directories
+
+| Directory | Purpose |
+|-----------|---------|
+| `src/` | Contains all TypeScript/React source code including components, pages, utilities, and type definitions |
+| `public/` | Static assets like images, fonts, and other public files served directly |
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Entry HTML file for the Vite development server |
+| `vite.config.ts` | Build and development server configuration |
+| `tsconfig.json` | TypeScript compiler options |
+| `package.json` | Project metadata, dependencies, and npm scripts |
+| `.env.example` | Template for environment variables (copy to `.env.local` and fill in your API keys) |
 
 ---
 

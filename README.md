@@ -1,188 +1,20 @@
-# PM Trainer
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-An interactive PM thinking trainer for students and aspiring Product Managers — build the mental models that great PMs rely on through daily practice.
+# Run and deploy your AI Studio app
 
-**PM thinking is a muscle. This is the gym.**
+This contains everything you need to run your app locally.
 
----
+View your app in AI Studio: https://ai.studio/apps/d274e719-0306-47d6-8019-22ca22b871f8
 
-## 📋 Table of Contents
+## Run Locally
 
-- [Overview](#overview)
-- [Features](#-features)
-- [Why PM Trainer?](#-why-pm-trainer)
-- [PM Frameworks Covered](#pm-frameworks-covered)
-- [Tech Stack](#tech-stack)
-- [Project Layout](#project-layout)
-- [Setup & Installation](#setup--installation)
-- [Author](#author)
+**Prerequisites:**  Node.js
 
----
 
-## Overview
-
-PM Trainer is a structured, AI-powered learning platform designed to help aspiring Product Managers master core competencies through deliberate daily practice. Each challenge builds frameworks, de[...]
-
-**Perfect for:**
-- Job candidates preparing for PM interviews
-- Students building a PM portfolio
-- Early-career PMs developing their mental models
-- Anyone transitioning into product management
-
----
-
-## 🚀 Features
-
-### Interactive Learning
-* **Daily PM Challenges:** One new product thinking challenge every day to build a consistent practice habit
-* **Case Study Mode:** Work through real company scenarios with guided PM questions
-* **Framework Walkthroughs:** Step-by-step guidance on applying RICE, North Star, HEART, Jobs-to-be-Done, and more
-* **Reflection Prompts:** Structured prompts to deepen learning after each challenge
-* **Streak Tracker:** Tracks your daily practice streak to keep momentum
-
-### AI-Powered Feedback
-* **Adaptive Scenarios:** Google Gemini generates personalized case studies tailored to your experience level
-* **Intelligent Evaluation:** Real-time feedback on your PM thinking and decision-making approach
-* **Dynamic Difficulty:** Challenges adjust based on your performance and learning progress
-
----
-
-## 🎯 Why PM Trainer?
-
-**For Hiring Managers & Recruiters:**
-- Demonstrates serious PM thinking preparation
-- Showcases understanding of core frameworks (prioritization, metrics, strategy)
-- Proves commitment to continuous skill development
-
-**For Interview Success:**
-- Build portfolio-worthy case study examples
-- Master the frameworks interviewers expect: RICE, North Star, HEART, Jobs-to-be-Done
-- Develop structured thinking patterns that interviewers evaluate
-
-**For Career Growth:**
-- From day 1 through senior roles, stay sharp on PM fundamentals
-- Deliberate practice model proven for skill development
-- Real company scenarios mirror actual PM decision-making
-
----
-
-## PM Frameworks Covered
-
-### 📊 Prioritization
-* RICE (Reach, Impact, Confidence, Effort)
-* ICE (Impact, Confidence, Ease)
-* MoSCoW (Must have, Should have, Could have, Won't have)
-
-### 📈 Metrics & Analytics
-* North Star Framework
-* HEART Metrics (Happiness, Engagement, Adoption, Retention, Task Success)
-* AARRR (Acquisition, Activation, Retention, Revenue, Referral)
-
-### 👥 User Research & Insights
-* Jobs-to-be-Done Theory
-* Personas & User Segmentation
-* Empathy Mapping
-
-### 🎲 Strategy & Planning
-* Value Proposition Canvas
-* Porter's Five Forces
-* Competitive Analysis
-
-### ⚙️ Execution & Operations
-* Agile Methodology
-* Sprint Planning
-* Roadmapping & OKRs
-
----
-
-## Tech Stack
-
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **AI Engine** | Google Gemini API | Generate scenarios, case studies, and adaptive feedback |
-| **Frontend** | TypeScript + React | Interactive user interface and challenge workflows |
-| **Styling** | Tailwind CSS | Modern, responsive UI design |
-| **Runtime** | Node.js | Backend execution and API integration |
-
----
-
-## Project Layout
-
-```
-PM-trainer/
-├── src/                      # Source code directory
-│   ├── components/           # Reusable React components
-│   ├── pages/               # Page components for different routes
-│   ├── utils/               # Utility functions and helpers
-│   ├── hooks/               # Custom React hooks
-│   ├── types/               # TypeScript type definitions
-│   └── App.tsx              # Main application component
-│
-├── public/                   # Static assets
-├── index.html                # HTML entry point
-├── vite.config.ts            # Vite configuration
-├── tsconfig.json             # TypeScript configuration
-├── tailwind.config.js        # Tailwind CSS configuration
-├── package.json              # Project dependencies and scripts
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore rules
-└── README.md                 # This file
-```
-
-### Key Directories
-
-| Directory | Purpose |
-|-----------|---------|
-| `src/` | Contains all TypeScript/React source code including components, pages, utilities, and type definitions |
-| `public/` | Static assets like images, fonts, and other public files served directly |
-
-### Key Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Entry HTML file for the Vite development server |
-| `vite.config.ts` | Build and development server configuration |
-| `tsconfig.json` | TypeScript compiler options |
-| `package.json` | Project metadata, dependencies, and npm scripts |
-| `.env.example` | Template for environment variables (copy to `.env.local` and fill in your API keys) |
-
----
-
-## Setup & Installation
-
-### Prerequisites
-- Node.js 16+ installed
-- Google Gemini API key (free tier available)
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/yatinbhalla/PM-trainer.git
-cd PM-trainer
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-echo "GEMINI_API_KEY=your_key_here" > .env.local
-
-# Start the development server
-npm run dev
-```
-
-**Get a free Gemini API key at [aistudio.google.com](https://aistudio.google.com/)**
-
----
-
-## Author
-
-**Yatin Bhalla**
-
-🛍️ PM & AI builder | Managing retail businesses | PG Product Management @ BITS School of Management
-
-🔗 [LinkedIn: linkedin.com/in/yatin-bhalla-834632238](https://linkedin.com/in/yatin-bhalla-834632238)
-
----
-
-**Start building PM thinking today. One challenge. Every day.**
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
